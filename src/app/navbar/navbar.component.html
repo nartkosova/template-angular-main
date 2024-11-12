@@ -1,0 +1,24 @@
+<nav class="bg-gray-700 text-white relative">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <a routerLink="/" class="text-2xl font-bold">Dino</a>
+        <ul class="hidden md:flex space-x-4">
+            <li><a routerLink="/" class="hover:bg-gray-600 px-3 py-2 rounded">Home</a></li>
+            <li><a routerLink="/about" class="hover:bg-gray-600 px-3 py-2 rounded">About</a></li>
+            <li><a routerLink="/services" class="hover:bg-gray-600 px-3 py-2 rounded">Games</a></li>
+            <li><a routerLink="/contact" class="hover:bg-gray-600 px-3 py-2 rounded">Contact</a></li>
+        </ul>
+        <div class="md:hidden flex flex-col cursor-pointer" (click)="toggleMenu($event)">
+            <span class="h-1 w-6 bg-white mb-1"></span>
+            <span class="h-1 w-6 bg-white mb-1"></span>
+            <span class="h-1 w-6 bg-white"></span>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <ul [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="md:hidden bg-gray-700 text-white space-y-2 p-4">
+        <li><a routerLink="/" class="hover:bg-gray-600 block px-3 py-2 rounded">Home</a></li>
+        <li><a routerLink="/about" class="hover:bg-gray-600 block px-3 py-2 rounded">About</a></li>
+        <li><a routerLink="/services" class="hover:bg-gray-600 block px-3 py-2 rounded">Games</a></li>
+        <li><a routerLink="/contact" class="hover:bg-gray-600 block px-3 py-2 rounded">Contact</a></li>
+    </ul>
+  </nav>
+  

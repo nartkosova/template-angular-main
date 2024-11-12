@@ -1,0 +1,8 @@
+.phaser-game {
+    display: block; 
+    width: 98vw; 
+    height: 67vh; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  

@@ -1,0 +1,11 @@
+<main id="app" class="bg-white w-full min-h-screen overflow-auto flex flex-col justify-start items-center">
+    <app-navbar class="w-full"></app-navbar>
+    <router-outlet ></router-outlet> 
+    <div class="w-full max-w-4xl flex flex-wrap justify-center gap-4 my-4">
+        <button routerLink="app-game1" class="w-[540px] my-2 mx-2 p-3 px-20 text-white bg-[#007b7f] border-none rounded-md cursor-pointer transition-transform duration-200 ease-in-out text-lg font-bold shadow-md hover:bg-[#006666] hover:-translate-y-1 active:translate-y-0 active:shadow-none disabled:cursor-not-allowed disabled:bg-gray-700 disabled:text-gray-400">Dino 1</button>
+        <button routerLink="app-game2"class="w-[540px] my-2 mx-2 p-3 px-20 text-white bg-[#007b7f] border-none rounded-md cursor-pointer transition-transform duration-200 ease-in-out text-lg font-bold shadow-md hover:bg-[#006666] hover:-translate-y-1 active:translate-y-0 active:shadow-none disabled:cursor-not-allowed disabled:bg-gray-700 disabled:text-gray-400">Dino 2</button>
+        
+    </div> 
+    <div  class="flex-grow"></div>
+    <app-footer class="w-full"></app-footer>
+</main>
